@@ -8,14 +8,18 @@
     <meta name="author" content="Karina Camargo Araujo">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg">
+    <!-- Link para folha de estilo da página - CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Meu Perfil</title>
+
 </head>
 
 <body>
     <!-- Cabeçalho da Página -->
     <header>
         <!-- Div conteúdo do cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="flex">
 
             <!-- Título do cabeçalho -->
             <div id="titulo">
@@ -23,39 +27,32 @@
             </div>
 
             <!-- Conteúdo do menu da página (header) -->
-            <div id="menu">
+            <div id="menu" class="menu">
                 <nav>
                     <!-- Marcadores não ordenados + links -->
-                    <ul id="menu">
-                        <li>
-                            <a href="index.html"> Home </a>
-                        </li>
-                        <li>
-                            <a href="contato.html"> Contato </a>
-                        </li>
+                    <ul>
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="contato.html"> Contato </a> </li>
                     </ul>
                 </nav>
-
             </div>
-
         </div>
-
     </header>
 
     <!-- Seção principal da página -->
     <main>
 
         <!-- Seção sobre você -->
-        <section id="about">
+        <section id="about" class="about flex_start">
 
             <!-- Título da seção -->
             <h2>Sobre mim</h2>
 
             <!-- Conteúdo da seção -->
-            <div id="conteudo">
+            <div id="conteudo" class="conteudo flex">
 
                 <!-- imagem do criador do conteúdo -->
-                <img src="./assets/img/user_01.svg" alt="Foto da criadora desse conteúdo" />
+                <img src="./assets/img/user_02.svg" alt="Foto da criadora desse conteúdo" class="img_profile" />
 
                 <!-- Texto sobre a criadora do conteúdo -->
                 <article id="sobre_texto">
@@ -80,44 +77,43 @@
         </section>
 
         <!-- Seção contendo um vídeo de sua preferência -->
-        <section id="video">
-            <section id="video">
+        <section id="video" class="flex_start">
 
-                <h2>Meu vídeo favorito:</h2>
+            <h2>Meu vídeo favorito:</h2>
 
-                <div id="youtube">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/35i4zTky9pI?si=oG2rxIsRNGtdLZs3"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
+            <div id="youtube" class="flex">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/35i4zTky9pI?si=oG2rxIsRNGtdLZs3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
 
-            </section>
+        </section>
 
     </main>
 
     <!-- Rodapé da página -->
-    <footer>
+    <footer class="flex">
 
         <!-- Seção de Contato - Redes Sociais-->
-            <section id="redes_sociais">
+        <section id="redes_sociais" class="redes_sociais">
 
-                    <a href="">
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="">
-                        <img src="assets/img/github.svg" alt="Github" />
-                    </a>
-                    <a href="">
-                        <img src="assets/img/instagram.svg" alt="Instagram" />
-                    </a>
+            <a href="">
+                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="">
+                <img src="assets/img/github.svg" alt="Github" />
+            </a>
+            <a href="">
+                <img src="assets/img/instagram.svg" alt="Instagram" />
+            </a>
 
-            </section>
+        </section>
 
-			<h3>
-				Feito com 💜 por Karina Araujo - 2025
-			</h3>
+        <h3>
+            Feito com 💜 por Karina Araujo - 2025
+        </h3>
 
 
     </footer>

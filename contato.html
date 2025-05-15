@@ -8,6 +8,9 @@
     <meta name="author" content="Karina Camargo Araujo">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg">
+    <!-- Link para folha de estilo da página - CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Meu Perfil</title>
 </head>
 
@@ -15,7 +18,7 @@
     <!-- Cabeçalho da Página (header) -->
     <header>
         <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="flex">
             <!-- Titulo do Cabeçalho -->
             <div id="titulo">
                 <!-- Seu nome -->
@@ -44,7 +47,7 @@
     <main>
 
         <!-- Seção Formulário de Contato e Redes Sociais -->
-        <section id="contact">
+        <section id="contact" class="contact flex">
 
             <!-- Seção do Formulário -->
             <form action="#" method="submit" id="formulario">
@@ -70,15 +73,16 @@
             </form>
 
             <!-- Seção do Google Maps -->
-            <article id="mapa">
-
-                <p>Arquipélago das Berlengas</p>
-                <p>Portugal</p>
-
+            <article id="mapa" class="mapa flex_start">
+                <div class="mapa-endereco">
+                    <p>Arquipélago das Berlengas</p>
+                    <p>Portugal</p>
+                </div>
+                
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197199.83826073186!2d-9.683203282197772!3d39.44113825775375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1f42daf0fda36b%3A0x2120431bda11174f!2sArquip%C3%A9lago%20das%20Berlengas!5e0!3m2!1spt-BR!2sbr!4v1747090778825!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    src="https://www.google.com/maps/embed?pb=!4v1747347322880!6m8!1m7!1sE-Oajcx0yFRuJyIHOv2YTg!2m2!1d39.36290030103539!2d-9.158697218696448!3f256.74339861591915!4f-4.574767545710685!5f0.7820865974627469F"
+                    width="400" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false">
+                    tabindex="0" id="mapa"
                 </iframe>
 
             </article>
@@ -88,15 +92,15 @@
     </main>
 
     <!-- Rodapé da Página (footer) -->
-    <footer>
+    <footer class="flex">
 
         <!-- Seção de Contato - Redes Sociais -->
-        <section id="redes_sociais">
+        <section id="redes_sociais" class="redes_sociais">
 
-            <a href="">
+            <a href="https://www.linkedin.com/in/karina-camargo-araujo/" target="_blank">
                 <img src="assets/img/linkedin.svg" alt="LinkedIn" />
             </a>
-            <a href="">
+            <a href="https://github.com/araujokahh" target="_blank">
                 <img src="assets/img/github.svg" alt="Github" />
             </a>
             <a href="">
